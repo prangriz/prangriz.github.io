@@ -111,6 +111,22 @@ h2.section-title {
   border-bottom: 1px solid var(--rule);
 }
 
+img.portrait {
+  float: right;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: 50% 30%;
+  border-radius: 4px;
+  margin: 0.3rem 0 0.8rem 1.75rem;
+}
+
+#about::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .contact-line {
   font-size: 0.97rem;
   color: var(--ink-soft);
@@ -264,6 +280,7 @@ footer.site-footer {
 }
 
 @media (max-width: 480px) {
+  img.portrait { float: none; display: block; margin: 0 0 1.25rem 0; width: 130px; height: 130px; }
   body { font-size: 17px; }
   .wrap { padding: 3rem 1.25rem 4rem; }
   ul.news-list li { grid-template-columns: 5.2em 1fr; gap: 0.6rem; }
